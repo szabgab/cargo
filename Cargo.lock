@@ -3760,21 +3760,23 @@ name = "xtask-build-man"
 version = "0.0.0"
 
 [[package]]
-name = "xtask-stale-label"
-version = "0.0.0"
-dependencies = [
- "toml_edit",
-]
-
-[[package]]
-name = "xtask-unpublished"
+name = "xtask-bump-check"
 version = "0.0.0"
 dependencies = [
  "anyhow",
  "cargo",
+ "cargo-util",
  "clap 4.3.3",
  "env_logger 0.10.0",
+ "git2",
  "log",
+]
+
+[[package]]
+name = "xtask-stale-label"
+version = "0.0.0"
+dependencies = [
+ "toml_edit",
 ]
 
 [[package]]
